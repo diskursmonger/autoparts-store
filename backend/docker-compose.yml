@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  oracle:
+    image: store/oracle/database-enterprise:12.2.0.1
+    ports:
+      - "1521:1521"
+    volumes: 
+      - oracle-data:/opt/oracle/oradata
+
+volumes:
+  oracle-data:

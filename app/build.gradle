@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+javafx {
+    version = "13.0.2"
+    modules = [ 'javafx.controls' , 'javafx.fxml']
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-fxml:13'
+    implementation 'org.openjfx:javafx-controls:13'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.2'
+}
+

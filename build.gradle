@@ -1,0 +1,17 @@
+plugins {
+    id "io.freefair.lombok" version "6.0.0-m2" apply false
+}
+
+allprojects {
+
+    apply plugin: "io.freefair.lombok"
+    apply plugin: "java"
+
+    group = 'ru.nsu.ccfit.kozlova.autoparts'
+    version = '0.0.1-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+
+}
